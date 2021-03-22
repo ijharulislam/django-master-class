@@ -1,0 +1,7 @@
+<h2>Delete: {{blog.title}}</h2>
+<form method="post">
+    {% csrf_token %}
+    <h4>Are you sure you want to delete: {{blog.title}}</h4>
+    <input type="submit" value="Yes">
+    <a href="/">Cancel</a>
+</form>
